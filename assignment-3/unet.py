@@ -8,7 +8,6 @@ from PIL import Image
 import torchvision.transforms as T
 import matplotlib.pyplot as plt
 import os
-
 import tensorflow as tf
 from tensorflow.keras import layers, models
 
@@ -292,3 +291,4 @@ plt.title("After Improved Cleaning")
 plt.imshow(mask_clean.squeeze(), cmap='gray')
 plt.axis("off")
 plt.show()
+
