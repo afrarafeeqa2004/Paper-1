@@ -8,7 +8,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, UpSampling2D
 import requests
 
-image_url = "https://ultralytics.com/images/bus.jpg"
+image_url = "E:/Afra/datasets/xxxxx.jpg"
 response = requests.get(image_url)
 with open("bus.jpg", "wb") as f:
     f.write(response.content)
@@ -29,3 +29,4 @@ plt.imshow(cv2.cvtColor(out2, cv2.COLOR_BGR2RGB))
 plt.title("Image Segmentation")
 plt.axis("off")
 plt.show()
+
